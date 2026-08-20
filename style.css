@@ -135,13 +135,21 @@ body {
 
 .project-link {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 14px;
+  padding: 9px 14px;
+  border: 1px solid #3498db;
+  border-radius: 5px;
   color: #3498db;
+  background-color: transparent;
   text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.project-link:hover {
-  text-decoration: underline;
+.project-link:hover,
+.project-link:focus {
+  color: #ffffff;
+  background-color: #3498db;
+  text-decoration: none;
 }
 
 /* Контакты: прижать вправо */
