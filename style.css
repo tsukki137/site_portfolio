@@ -177,6 +177,48 @@ body {
   font-size: 0.9rem;
 }
 
+/* Сетка направлений (разработка / аналитика) */
+.directions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.direction-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.direction-card h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #2c3e50;
+}
+
+.direction-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+.direction-card .project-link {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+/* Адаптив для направлений */
+@media (max-width: 600px) {
+  .directions-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Адаптация для планшетов и телефонов */
 @media (max-width: 768px) {
   .container {
