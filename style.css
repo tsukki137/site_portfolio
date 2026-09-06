@@ -112,10 +112,22 @@ body {
   color: var(--header-bg);
 }
 
+/* Контакты */
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.contact-content p {
+  margin-bottom: 4px;
+}
+
 /* Навыки */
-.skills-grid {
+.skills-grid--three {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 18px;
 }
 
@@ -134,10 +146,48 @@ body {
 .skills-block ul {
   list-style: none;
   padding-left: 0;
+  margin: 0;
 }
 
 .skills-block li {
-  margin-bottom: 4px;
+  margin-bottom: 6px;
+  position: relative;
+  padding-left: 14px;
+}
+
+.skills-block li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--primary, #3b82f6);
+  font-weight: bold;
+}
+
+/* минус маркеры у списка навыков */
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.skills-list li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Сами теги */
+.skill-tag {
+  display: inline-block;
+  padding: 4px 8px;
+  margin: 0;
+  border-radius: 999px;
+  background: #eef2ff;
+  color: #3730a3;
+  font-size: 0.85rem;
+  line-height: 1.2;
 }
 
 /* Проекты */
@@ -215,18 +265,6 @@ body {
   align-self: flex-start;
 }
 
-/* Контакты */
-.contact-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  text-align: right;
-}
-
-.contact-content p {
-  margin-bottom: 4px;
-}
-
 /* Footer */
 .footer {
   background: var(--header-bg);
@@ -278,8 +316,16 @@ body {
     height: 260px;
   }
 
-  .skills-grid {
+  @media (max-width: 900px) {
+  .skills-grid--three {
+    grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 600px) {
+  .skills-grid--three {
     grid-template-columns: 1fr;
+    }
   }
 
   .contact-content {
@@ -313,5 +359,10 @@ body {
 
   .directions-grid {
     grid-template-columns: 1fr;
+    }
   }
-}
+
+  .skills-grid--three {
+    grid-template-columns: 1fr;
+    }
+  }
