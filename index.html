@@ -7,176 +7,184 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Навигация -->
   <header class="header">
     <div class="container header-content">
       <h1 class="logo">Анастасия Пикова</h1>
       <nav class="nav">
-        <a href="#intro">Обо мне</a>
-        <a href="#education">Образование</a>
+        <a href="#about">Обо мне</a>
         <a href="#skills">Навыки</a>
         <a href="#projects">Проекты</a>
-        <a href="#courses">Курсы</a>
-        </nav>
+        <a href="#education">Образование</a>
+        <a href="#contact">Контакты</a>
+      </nav>
     </div>
   </header>
 
+
   <main>
-
-    <section class="hero">
+    <!-- Hero секция -->
+    <section id="hero" class="hero">
       <div class="container hero-content">
-        <h1 class="hero-title">Анастасия Пикова</h1>
-        <p class="hero-subtitle">IT-аналитик / Разработчик</p>
+        <h1 class="hero-title">IT-аналитик и разработчик</h1>
         <p class="hero-description">
-        Проектирую системы, анализирую требования, превращаю идеи в работающие решения
+          Проектирую системы, анализирую требования и превращаю идеи в работающие решения.
+          Ищу стажировку или подработку в IT-аналитике.
         </p>
-        <a href="#projects" class="btn btn-primary">Смотреть проекты</a>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">Смотреть проекты</a>
+          <a href="#contact" class="btn btn-secondary">Связаться со мной</a>
+        </div>
       </div>
     </section>
 
-    <!-- Блок с представлением + фото -->
-    <section id="intro" class="section">
-      <div class="container intro-content">
-        <div class="intro-text">
+
+    <!-- Обо мне -->
+    <section id="about" class="section section-about">
+      <div class="container">
+        <div class="section-header">
           <h2>Обо мне</h2>
-          <p>
-          Меня зовут Анастасия, я учусь на направлении «Разработка сайтов и приложений» (КГЭУ). 
-          В учебных проектах я занимаюсь не только кодом, но и тем, что идёт до него: 
-          разбираюсь в предметной области, формулирую требования, проектирую базы данных и описываю бизнес‑процессы.
-          </p>
-          <p>
-          Мне интересно видеть картину целиком: от идеи и анализа до реализации, тестов и документации. 
-          Поэтому я ищу стажировку или подработку на позиции аналитика в IT, где смогу работать с требованиями, 
-          моделями процессов и документацией, постепенно углубляясь в аналитику данных и проектирование систем.
-          </p>
-          <p>
-          В работе ценю ясность, структуру и обратную связь. Люблю разбираться, «как это должно работать на самом деле», 
-          и превращать разрозненные пожелания в понятные схемы и спецификации.
-          </p>
         </div>
-        
-        <div class="intro-photo" aria-label="Фото Анастасии"></div>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="container">
-        <h2>Контакты</h2>
-        <div class="contact-content">
-          <p>Email: pikova.yaa@gmail.com</p>
-          <p><a href="https://github.com/tsukki137" target="_blank">GitHub</a></p>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Меня зовут Анастасия, я учусь на направлении «Разработка сайтов и приложений» (КГЭУ).
+              В учебных проектах я занимаюсь не только кодом, но и тем, что идёт до него:
+              разбираюсь в предметной области, формулирую требования, проектирую базы данных и описываю бизнес‑процессы.
+            </p>
+            <p>
+              Мне интересно видеть картину целиком: от идеи и анализа до реализации, тестов и документации.
+              Поэтому я ищу позицию аналитика в IT, где смогу работать с требованиями, моделями процессов и документацией.
+            </p>
+            <p>
+              В работе ценю ясность, структуру и обратную связь. Люблю разбираться, «как это должно работать на самом деле»,
+              и превращать разрозненные пожелания в понятные схемы и спецификации.
+            </p>
+          </div>
+          <div class="about-photo">
+            <img src="photo.jpg" alt="Анастасия Пикова" />
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Образование -->
-    <section id="education" class="section">
+    <section id="skills" class="section section-skills">
       <div class="container">
-        <h2>Образование</h2>
-        <div class="education-item">
-          <h3>КГЭУ</h3>
-          <p>Кафедра информационных технологий</p>
-          <p>Специальность: «Разработка сайтов и приложений»</p>
-          <p>Форма обучения: заочная (3 курс)</p>
+        <div class="section-header">
+          <h2>Навыки и технологии</h2>
+          <p class="section-subtitle">
+            Основные направления и инструменты, с которыми я работаю
+          </p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Языки программирования</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">C#</span>
+              <span class="skill-tag">SQL</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3>Инструменты</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3>Технологии</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">ООП</span>
+              <span class="skill-tag">Базы данных</span>
+              <span class="skill-tag">Сети</span>
+              <span class="skill-tag">Телекоммуникации</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-<!-- Навыки: три категории -->
-<section id="skills" class="section">
-  <div class="container">
-    <h2>Навыки</h2>
-
-    <div class="skills-grid skills-grid--three">
-      <div class="skills-block">
-        <h3>Языки программирования</h3>
-        <ul class="skills-list">
-        <li><span class="skill-tag">Python</span></li>
-        <li><span class="skill-tag">C++</span></li>
-        <li><span class="skill-tag">C#</span></li>
-        <li><span class="skill-tag">SQL</span></li>
-</ul>
-      </div>
-
-      <div class="skills-block">
-        <h3>Инструменты</h3>
-        <ul>
-          <li>Git, GitHub</li>
-          <li>HTML, CSS</li>
-        </ul>
-      </div>
-
-      <div class="skills-block">
-        <h3>Технологии и области</h3>
-        <ul>
-          <li>ООП</li>
-          <li>Базы данных</li>
-          <li>Сети и телекоммуникации</li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- Проекты: направления -->
-<section id="projects" class="section">
-  <div class="container">
-    <h2>Проекты</h2>
-
-    <div class="projects-intro">
-      <p>
-        Ниже представлены мои учебные проекты, разделённые на два направления:
-        разработка и аналитика. В каждом направлении собраны соответствующие
-        работы: код, базы данных, описание бизнес-процессов, требования и
-        документация.
-      </p>
-    </div>
-
-    <div class="directions-grid">
-      <div class="direction-card">
-        <h3>Разработка</h3>
-        <p>
-          Проекты по программированию: C++, C#, Python, алгоритмы и структуры данных.
-        </p>
-        <a class="project-link" href="code.html">Проекты и работы</a>
-      </div>
-
-      <div class="direction-card">
-        <h3>Аналитика</h3>
-        <p>
-          Проекты по анализу и проектированию: бизнес-процессы, требования, моделирование, документация, базы данных и информационные системы.
-        </p>
-        <a class="project-link" href="analytics.html">Проекты и работы</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="courses" class="section">
-  <div class="container">
-    <h2>Курсы и сертификаты</h2>
-    <ul>
-      <li><a href="https://stepik.org/course/121765" target="_blank" rel="noopener">Stepik — «Создание бота в Telegram на Node.js» (03.2026)</a></li>
-      <li><a href="https://stepik.org/cert/3306806" target="_blank" rel="noopener">Stepik — «Основы Git и GitHub» (07.2026)</a></li>
-      <li> </li>
-    </ul>
-  </div>
-</section>
-
-<!-- CTA секция -->
-    <section class="cta-section">
+    <section id="projects" class="section section-projects">
       <div class="container">
-        <h2>Готовы к сотрудничеству?</h2>
-        <p>Ищу стажировку или подработку на позиции аналитика в IT.</p>
-        <a href="mailto:pikova.yaa@gmail.com" class="btn btn-primary">Связаться со мной</a>
+        <div class="section-header">
+          <h2>Проекты</h2>
+          <p class="section-subtitle">
+            Учебные работы по разработке и аналитике
+          </p>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3>Разработка</h3>
+            <p>
+              Проекты по программированию: C++, C#, Python, алгоритмы и структуры данных.
+            </p>
+            <a href="code.html" class="project-link">Посмотреть работы →</a>
+          </div>
+          <div class="project-card">
+            <h3>Аналитика</h3>
+            <p>
+              Бизнес-процессы, требования, моделирование, документация, базы данных и информационные системы.
+            </p>
+            <a href="analytics.html" class="project-link">Посмотреть работы →</a>
+          </div>
+        </div>
       </div>
     </section>
 
-</main>
+    <section id="education" class="section section-education">
+      <div class="container">
+        <div class="section-header">
+          <h2>Образование и курсы</h2>
+        </div>
+        <div class="education-grid">
+          <div class="education-card">
+            <h3>КГЭУ</h3>
+            <p>Кафедра информационных технологий</p>
+            <p>«Разработка сайтов и приложений»</p>
+            <p class="muted">Заочная форма, 3 курс</p>
+          </div>
+          <div class="courses-card">
+            <h3>Курсы и сертификаты</h3>
+            <ul class="courses-list">
+              <li>
+                <a href="https://stepik.org/course/121765" target="_blank" rel="noopener">Stepik — «Создание бота в Telegram на Node.js» (03.2026)</a>
+              </li>
+              <li>
+                <a href="https://stepik.org/cert/3306806" target="_blank" rel="noopener">Stepik — «Основы Git и GitHub» (07.2026)</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
+
+    <!-- Контакты + CTA -->
+    <section id="contact" class="section section-contact">
+      <div class="container contact-content">
+        <div class="section-header">
+          <h2>Давайте работать вместе</h2>
+          <p class="section-subtitle">
+            Открыта к предложениям на стажировку или подработку
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a href="mailto:pikova.yaa@gmail.com" class="btn btn-primary btn-large">Написать на почту</a>
+          <a href="https://github.com/tsukki137" target="_blank" rel="noopener" class="btn btn-secondary btn-large">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <p>© 2026 Анастасия Пикова. Все права защищены.</p>
+      <p>© 2026 Анастасия Пикова</p>
     </div>
   </footer>
 </body>

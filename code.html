@@ -3,86 +3,137 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Разработка — Портфолио Анастасии</title>
+  <meta name="description" content="Проекты по разработке: HTML, CSS, C++, Python, C#, алгоритмы, ООП, консольные приложения." />
+  <title>Разработка — Портфолио Анастасии Пиковой</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
+  <!-- Навигация (как на главной) -->
   <header class="header">
     <div class="container header-content">
-      <!-- пока пусто, просто полоса -->
+      <a href="index.html" class="logo">← На главную</a>
     </div>
   </header>
 
+
   <main>
+    <!-- Hero страницы -->
+    <section class="hero hero-page">
+      <div class="container hero-content">
+        <h1 class="hero-title">Проекты по разработке</h1>
+        <p class="hero-description">
+          C++, C#, Python, алгоритмы и структуры данных, веб-разработка
+        </p>
+      </div>
+    </section>
+
+
+    <!-- Список проектов -->
     <section id="code-projects" class="section">
       <div class="container">
-        <h2>Проекты по разработке</h2>  
-        <div class="project-card">
-          <h3>Этот одностраничный сайт-портфолио</h3>
-          <p>
-            Создан для демонстрации учебных проектов и навыков в HTML, CSS, GitHub Pages.
-          </p>
-          <a class="project-link" href="https://github.com/tsukki137/site_portfolio/tree/main" target="_blank">Посмотреть репозиторий проекта</a>
-        </div>
-          <h3>Связанные курсы</h3>
-          <ul>
-          <li><a href="https://stepik.org/cert/3165336" target="_blank">Stepik - "Веб-разработка для начинающих: HTML и CSS"</a></li>
-          </ul>
+        <div class="projects-list">
+          <!-- Проект 1: Сайт-портфолио -->
+          <div class="project-card project-card-detailed">
+            <h3>Одностраничный сайт-портфолио</h3>
+            <p>
+              Создан для демонстрации учебных проектов и навыков в HTML, CSS, GitHub Pages.
+            </p>
+            <div class="project-meta">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">GitHub Pages</span>
+            </div>
+            <a class="project-link" href="https://github.com/tsukki137/site_portfolio/tree/main" target="_blank" rel="noopener">
+              Посмотреть репозиторий →
+            </a>
+          </div>
 
-        <div class="project-card">
-          <h3>Курсовая работа по C++: обработка битов числа</h3>
-          <p>
-            Курсовая работа по дисциплине «Алгоритмизация и программирование».
-          </p>
-          <p>  
-            В рамках варианта задания разработана консольная программа на C++: по битам числа типа unsigned int формируется массив, после чего выполняется поиск первого элемента, отличного от 1.
-            Использованы циклы, массивы, условия и побитовые операции.
-          </p>
-          <a class="project-link" href="https://github.com/tsukki137/cpp-coursework" target="_blank">Посмотреть репозиторий проекта</a>
-        </div>
-          <h3>Связанные курсы</h3>
-          <ul>
-          <li><a href="ССЫЛКА_НА_СЕРТИФИКАТ" target="_blank">Название курса (платформа)</a></li>
-          </ul>
 
-        <div class="project-card">
-          <h3>Проекты на Python</h3>
-          <p>
-            В рамках учебной практики я реализовала серию консольных приложений на Python, работая в среде IDLE и в программе VC Code. 
-          <p>
-            В ходе разработки калькулятора, конвертера валют и игры «Угадай число» я закрепила навыки работы с базовыми типами данных (целые и вещественные числа), а также освоил ключевые управляющие конструкции: условные операторы для ветвления логики и циклы для организации повторяющихся процессов. Эти проекты позволили мне перейти от теории к созданию полноценного интерактивного взаимодействия с пользователем через консоль.
-          </p>
-          </p>
-          <a class="project-link" href="https://github.com/tsukki137/python_projects" target="_blank">Посмотреть репозиторий проекта</a>
-        </div>
-          <h3>Связанные курсы</h3>
-          <ul>
-          <li><a href="ССЫЛКА_НА_СЕРТИФИКАТ" target="_blank">Название курса (платформа)</a></li>
-          </ul>
-        
-        <div class="project-card">
-          <h3>Демонстрация ООП на C#: класс NumberBox</h3>
-          <p>
-            Учебное консольное приложение по дисциплине «Объектно-ориентированное программирование»
-          </p>
-          <p>  
-            Реализован класс для работы с целочисленным массивом: генерация значений со случайным знаком, подсчёт положительных элементов и вычисление суммы между первым и последним отрицательными элементами. Ипользованы класс, конструктор, свойство, методы, массивы и System.Random.
-          </p>
-          <a class="project-link" href="https://github.com/tsukki137/csharp_oop_numberbox/tree/main" target="_blank">Посмотреть репозиторий проекта</a>
-        </div>
-          <h3>Связанные курсы</h3>
-          <ul>
-          <li><a href="ССЫЛКА_НА_СЕРТИФИКАТ" target="_blank">Название курса (платформа)</a></li>
-          </ul>
+          <!-- Проект 2: C++ -->
+          <div class="project-card project-card-detailed">
+            <h3>Курсовая работа по C++: обработка битов числа</h3>
+            <p>
+              Курсовая работа по дисциплине «Алгоритмизация и программирование».
+            </p>
+            <p>
+              В рамках варианта задания разработана консольная программа на C++: по битам числа типа unsigned int формируется массив, 
+              после чего выполняется поиск первого элемента, отличного от 1. Использованы циклы, массивы, условия и побитовые операции.
+            </p>
+            <div class="project-meta">
+              <span class="project-tag">C++</span>
+              <span class="project-tag">Алгоритмы</span>
+              <span class="project-tag">Битовые операции</span>
+            </div>
+            <a class="project-link" href="https://github.com/tsukki137/cpp-coursework" target="_blank" rel="noopener">
+              Посмотреть репозиторий →
+            </a>
+          </div>
 
+
+          <!-- Проект 3: Python -->
+          <div class="project-card project-card-detailed">
+            <h3>Проекты на Python</h3>
+            <p>
+              В рамках учебной практики реализована серия консольных приложений на Python: калькулятор, конвертер валют и игра «Угадай число».
+            </p>
+            <p>
+              В ходе разработки закреплены навыки работы с базовыми типами данных (целые и вещественные числа), 
+              а также освоены ключевые управляющие конструкции: условные операторы для ветвления логики и циклы для организации повторяющихся процессов.
+            </p>
+            <div class="project-meta">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Консольные приложения</span>
+              <span class="project-tag">Основы программирования</span>
+            </div>
+            <a class="project-link" href="https://github.com/tsukki137/python_projects" target="_blank" rel="noopener">
+              Посмотреть репозиторий →
+            </a>
+          </div>
+
+
+          <!-- Проект 4: C# ООП -->
+          <div class="project-card project-card-detailed">
+            <h3>Демонстрация ООП на C#: класс NumberBox</h3>
+            <p>
+              Учебное консольное приложение по дисциплине «Объектно-ориентированное программирование».
+            </p>
+            <p>
+              Реализован класс для работы с целочисленным массивом: генерация значений со случайным знаком, 
+              подсчёт положительных элементов и вычисление суммы между первым и последним отрицательными элементами. 
+              Использованы класс, конструктор, свойство, методы, массивы и System.Random.
+            </p>
+            <div class="project-meta">
+              <span class="project-tag">C#</span>
+              <span class="project-tag">ООП</span>
+              <span class="project-tag">.NET</span>
+            </div>
+            <a class="project-link" href="https://github.com/tsukki137/csharp_oop_numberbox/tree/main" target="_blank" rel="noopener">
+              Посмотреть репозиторий →
+            </a>
+          </div>
+        </div>
+
+
+        <!-- Связанные курсы (общий блок в конце) -->
+        <div class="related-courses">
+          <h3>Связанные курсы</h3>
+          <ul class="courses-list">
+            <li>
+              <a href="https://stepik.org/cert/3165336" target="_blank" rel="noopener">
+                Stepik — «Веб-разработка для начинающих: HTML и CSS»
+              </a>
+            </li>
+            <!-- Добавь остальные курсы по необходимости -->
+          </ul>
+        </div>
       </div>
     </section>
   </main>
 
+
   <footer class="footer">
     <div class="container">
-      <p>© 2026 Анастасия Пикова. Все права защищены.</p>
+      <p>© 2026 Анастасия Пикова</p>
     </div>
   </footer>
 </body>
