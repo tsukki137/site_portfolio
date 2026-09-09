@@ -12,11 +12,19 @@
   --radius: 12px;
 }
 
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
 
 body {
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -25,11 +33,13 @@ body {
   background: var(--bg-page);
 }
 
+
 .container {
   max-width: 960px;
   margin: 0 auto;
   padding: 0 20px;
 }
+
 
 /* Header */
 .header {
@@ -41,6 +51,7 @@ body {
   z-index: 10;
 }
 
+
 .header-content {
   display: flex;
   justify-content: space-between;
@@ -49,11 +60,13 @@ body {
   gap: 10px;
 }
 
+
 .logo {
   font-size: 1.4rem;
   font-weight: 700;
   letter-spacing: 0.2px;
 }
+
 
 .nav a {
   color: var(--header-text);
@@ -61,26 +74,32 @@ body {
   margin-left: 14px;
   font-size: 0.95rem;
   opacity: 0.95;
+  transition: opacity 0.2s ease, color 0.2s ease;
 }
+
 
 .nav a:hover {
   opacity: 1;
-  text-decoration: underline;
+  color: #93c5fd;
+  text-decoration: none;
 }
 
+
 .section {
-  padding: 40px 0;
+  padding: 60px 0;
   background: var(--bg-card);
   margin: 20px 0;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
 
+
 .section h2 {
   margin-bottom: 18px;
   font-size: 1.7rem;
   color: var(--header-bg);
 }
+
 
 /* Intro + фото */
 .intro-content {
@@ -89,9 +108,11 @@ body {
   align-items: flex-start;
 }
 
+
 .intro-text {
   flex: 1;
 }
+
 
 .intro-photo {
   width: 220px;
@@ -102,15 +123,18 @@ body {
   border: 1px solid #e5e7eb;
 }
 
+
 /* Образование */
 .education-item {
   margin-bottom: 14px;
 }
 
+
 .education-item h3 {
   margin-bottom: 4px;
   color: var(--header-bg);
 }
+
 
 /* Контакты */
 .contact-content {
@@ -120,9 +144,11 @@ body {
   text-align: right;
 }
 
+
 .contact-content p {
   margin-bottom: 4px;
 }
+
 
 /* Навыки */
 .skills-grid--three {
@@ -131,6 +157,7 @@ body {
   gap: 18px;
 }
 
+
 .skills-block {
   background: #f8fafc;
   padding: 18px;
@@ -138,10 +165,12 @@ body {
   border: 1px solid var(--border);
 }
 
+
 .skills-block h3 {
   margin-bottom: 8px;
   color: var(--header-bg);
 }
+
 
 .skills-block ul {
   list-style: none;
@@ -149,11 +178,13 @@ body {
   margin: 0;
 }
 
+
 .skills-block li {
   margin-bottom: 6px;
   position: relative;
   padding-left: 14px;
 }
+
 
 .skills-block li::before {
   content: "•";
@@ -162,6 +193,7 @@ body {
   color: var(--primary, #3b82f6);
   font-weight: bold;
 }
+
 
 /* минус маркеры у списка навыков */
 .skills-list {
@@ -173,10 +205,12 @@ body {
   gap: 6px;
 }
 
+
 .skills-list li {
   margin: 0;
   padding: 0;
 }
+
 
 /* Сами теги */
 .skill-tag {
@@ -190,11 +224,13 @@ body {
   line-height: 1.2;
 }
 
+
 /* Проекты */
 .projects-intro {
   margin-bottom: 18px;
   color: var(--muted);
 }
+
 
 .project-card {
   margin-bottom: 22px;
@@ -204,10 +240,12 @@ body {
   background: #fafafa;
 }
 
+
 .project-card h3 {
   margin-bottom: 8px;
   color: var(--header-bg);
 }
+
 
 /* Ссылка кнопкой */
 .project-link {
@@ -223,12 +261,16 @@ body {
   color: #3b82f6;
 }
 
+
 .project-link:hover,
 .project-link:focus {
   background-color: #3b82f6;
   color: #fff;
   text-decoration: none;
+  outline: 2px solid #1e40af;
+  outline-offset: 2px;
 }
+
 
 /* Блоки разработка / аналитика */
 .directions-grid {
@@ -238,6 +280,7 @@ body {
   margin-top: 16px;
 }
 
+
 .direction-card {
   background: #f9fafb;
   border: 1px solid var(--border);
@@ -246,7 +289,15 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+
+.direction-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+}
+
 
 .direction-card h3 {
   margin: 0;
@@ -254,16 +305,19 @@ body {
   color: var(--header-bg);
 }
 
+
 .direction-card p {
   margin: 0;
   font-size: 0.95rem;
   color: var(--muted);
 }
 
+
 .direction-card .project-link {
   margin-top: auto;
   align-self: flex-start;
 }
+
 
 /* Footer */
 .footer {
@@ -275,7 +329,8 @@ body {
   font-size: 0.9rem;
 }
 
-/* Адаптация - общая */
+
+/* Адаптация */
 @media (max-width: 768px) {
   .container {
     padding: 0 16px;
@@ -297,7 +352,7 @@ body {
   }
 
   .section {
-    padding: 28px 0;
+    padding: 40px 0;
     margin: 14px 0;
   }
 
@@ -316,23 +371,28 @@ body {
     height: 260px;
   }
 
-  @media (max-width: 900px) {
-  .skills-grid--three {
-    grid-template-columns: 1fr 1fr;
-    }
-  }
-
-  @media (max-width: 600px) {
-  .skills-grid--three {
-    grid-template-columns: 1fr;
-    }
-  }
-
   .contact-content {
     align-items: flex-start;
     text-align: left;
   }
 }
+
+
+/* Навыки - планшеты */
+@media (max-width: 900px) {
+  .skills-grid--three {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+/* Навыки - телефоны */
+@media (max-width: 600px) {
+  .skills-grid--three {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 /* Небольшие телефоны */
 @media (max-width: 420px) {
@@ -359,10 +419,8 @@ body {
 
   .directions-grid {
     grid-template-columns: 1fr;
-    }
   }
 
   .skills-grid--three {
     grid-template-columns: 1fr;
-    }
   }
